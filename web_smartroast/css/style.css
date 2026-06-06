@@ -13,3 +13,31 @@
 .brand-logo img{
     height: 40px;
 }
+
+.hero{
+    min-height: 90vh;
+    background-image: url("../img/imagen-hero.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.hero h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hero p{
+    font-size: 14px;
+    max-width: 500px;
+    padding-bottom: 20px;
+}
+
+.hero-sutitulo{
+    color: #8b5a2b;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
