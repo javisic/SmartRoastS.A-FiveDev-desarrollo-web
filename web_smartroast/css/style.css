@@ -12,8 +12,6 @@
 
 .brand-logo img{
     height: 40px;
-<<<<<<< Updated upstream
-=======
 }
 
 .hero{
@@ -42,6 +40,7 @@
     font-weight: 600;
     letter-spacing: 2px;
     font-size: 12px;
+
 }
 
 .input-field {
@@ -97,5 +96,4 @@ input[type=number]:focus,
 textarea.materialize-textarea:focus,
 .select-wrapper .dropdown-content {
     border: 1px solid #a5a5a5 !important;
->>>>>>> Stashed changes
 }
