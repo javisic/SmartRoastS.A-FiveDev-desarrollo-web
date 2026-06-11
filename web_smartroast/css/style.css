@@ -44,8 +44,13 @@
 }
 
 .input-field {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#btn-submit {
+    margin-top: 100px;
+    color:#8b5a2b
 }
 
 #formulario input[type=text],
@@ -71,11 +76,13 @@ textarea.materialize-textarea,
 
 .select-wrapper .dropdown-content li, 
 .select-wrapper .dropdown-content li span {
-height: 47px !important;
-min-height: 47px !important;
-line-height: 47px !important;
-padding-top: 0 !important;
-padding-bottom: 0 !important;
+    height: 47px;
+    min-height: 47px;
+    line-height: 47px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #8b5a2b;
+    clip-path: margin-box;
 }
 
 textarea.materialize-textarea {
