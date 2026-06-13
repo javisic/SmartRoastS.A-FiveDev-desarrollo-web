@@ -104,3 +104,34 @@ textarea.materialize-textarea:focus,
 .select-wrapper .dropdown-content {
     border: 1px solid #a5a5a5 !important;
 }
+
+/* --- Integración de blends y Tabla de Precios  --- */
+.row { display: flex; flex-wrap: wrap; align-items: stretch; }
+.col { display: flex; }
+
+.modal-cafe-preview {
+    background-color: #2c1d11;
+    color: #ffffff;
+    height: 350px;
+    border-radius: 8px;
+    padding: 24px;
+    font-family: sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+}
+
+.modal-cafe-preview h4 { color: #d4b295; font-size: 1.8rem; margin-top: 0; margin-bottom: 12px; }
+.modal-cafe-preview p { color: #e0e0e0; line-height: 1.6; margin-bottom: 0; }
+
+.btn-cerrar-preview {
+    background-color: transparent;
+    color: #d4b295;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.tabla-precios { border: 2px solid #5d4037 !important; border-collapse: collapse; width: 100%; }
+.tabla-precios th { background-color: #5d4037 !important; color: white !important; padding: 15px !important; }
+.tabla-precios td { border-bottom: 1px solid #d7ccc8 !important; padding: 12px !important; }
