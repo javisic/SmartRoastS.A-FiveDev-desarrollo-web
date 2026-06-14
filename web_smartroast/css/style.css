@@ -135,3 +135,24 @@ textarea.materialize-textarea:focus,
 .tabla-precios { border: 2px solid #5d4037 !important; border-collapse: collapse; width: 100%; }
 .tabla-precios th { background-color: #5d4037 !important; color: white !important; padding: 15px !important; }
 .tabla-precios td { border-bottom: 1px solid #d7ccc8 !important; padding: 12px !important; }
+
+/* Agregamos un borde a la derecha a las columnas del footer */
+.page-footer .col {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Para que la última columna NO tenga línea*/
+  .page-footer .col:last-child {
+    border-right: none;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Para que el main se expanda para ocupar el espacio libre */
+main {
+    flex: 1;
+}
