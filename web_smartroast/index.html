@@ -59,39 +59,81 @@
                 </div>
             </div>
         </section>
-
-<div class="container" style="margin-top: 40px;">
+    </div>
     <div class="row">
+        <div class="container" style="text-align: center; margin-top: 50px; margin-bottom: 30px;">
+            <h3 style="color: #3e2723; font-weight: bold; margin-bottom: 5px;">NUESTROS BLENDS</h3>
+            <p style="font-size: 2rem; color: #5d4037;">
+                Seleccionados para realzar la esencia de cada origen
+            </p>
+        </div>
         <div class="col s12 m4">
-            <div class="modal-cafe-preview">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Blend Espresso</span>
+                    <p>Café con cuerpo intenso y crema persistente.</p>
+                </div>
+                <div class="card-action">
+                    <a class="modal-trigger btn brown darken-3" href="#modal-espresso">VER MÁS</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Blend Andino</span>
+                    <p>Un café excepcional con cuerpo balanceado.</p>
+                </div>
+                <div class="card-action">
+                    <a class="modal-trigger btn brown darken-3" href="#modal-andino">VER MÁS</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Blend Tropical</span>
+                    <p>Un blend fresco y exótico con notas frutales.</p>
+                </div>
+                <div class="card-action">
+                    <a class="modal-trigger btn brown darken-3" href="#modal-tropical">VER MÁS</a>
+                </div>
+            </div>
+        </div>
+        <div id="modal-espresso" class="modal">
+            <div class="modal-content">
                 <h4>Blend Espresso</h4>
                 <p>Es ideal para prepararte un espresso o acompañarlo con bebidas con leche. Tiene un cuerpo intenso y una crema super persistente.</p>
-                <div style="text-align: right; margin-top: 20px;">
-                    <button class="btn-cerrar-preview">Cerrar</button>
-                </div>
             </div>
+            <div class="modal-footer"><a href="#!" class="modal-close btn-flat">Cerrar</a></div>
         </div>
-        <div class="col s12 m4">
-            <div class="modal-cafe-preview">
+        
+        <div id="modal-andino" class="modal">
+            <div class="modal-content">
                 <h4>Blend Andino</h4>
                 <p>Un café excepcional con notas dulces y cuerpo balanceado, cultivado en altura. Ideal para quienes buscan una experiencia suave.</p>
-                <div style="text-align: right; margin-top: 20px;">
-                    <button class="btn-cerrar-preview">Cerrar</button>
-                </div>
             </div>
+            <div class="modal-footer"><a href="#!" class="modal-close btn-flat">Cerrar</a></div>
         </div>
-        <div class="col s12 m4">
-            <div class="modal-cafe-preview">
+        
+        <div id="modal-tropical" class="modal">
+            <div class="modal-content">
                 <h4>Blend Tropical</h4>
-                <p>Un blend fresco y exótico con notas frutales pronunciadas y una acidez brillante muy agradable. Perfecto para disfrutar frío.</p>
-                <div style="text-align: right; margin-top: 20px;">
-                    <button class="btn-cerrar-preview">Cerrar</button>
-                </div>
+                <p>Un blend fresco y exótico con notas frutales pronunciadas y una acidez brillante muy agradable.</p>
             </div>
+            <div class="modal-footer"><a href="#!" class="modal-close btn-flat">Cerrar</a></div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.modal');
+                M.Modal.init(elems);
+            });
+        </script>
+       
     </div>
-
-    <table class="tabla-precios striped responsive-table">
+    <div>
+        <table class="tabla-precios striped responsive-table">
         <thead>
             <tr><th>Blend</th><th>1 a 5 Kg</th><th>6 a 20 Kg</th><th>21+ Kg</th></tr>
         </thead>
@@ -101,13 +143,12 @@
             <tr><td>Tropical</td><td>$14.000</td><td>$12.800</td><td>$11.500</td></tr>
         </tbody>
     </table>
+    </div>
 </div>
 
 
     </main>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
 </body>
 <footer class="page-footer" style="background-color: #3e2723; padding-top: 20px;">
     <!-- Sección de iconos de servicios -->
