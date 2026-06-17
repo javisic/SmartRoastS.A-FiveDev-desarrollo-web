@@ -72,6 +72,12 @@
     color: #fff;
 }
 
+.hero-precios .hero-cuenta, h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
 .hero-precios .hero-cuenta, p{
     font-size: 16px;
     padding-bottom: 20px;
@@ -88,8 +94,20 @@
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
-.margen-sup {
+.margen-sup-inf {
     margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.pie{
+    background-color: #261a16;
+}
+
+.pie, p{
+    color:#e0e0e0;
+    padding: 20px 0;
 }
 
 /* --- Formulario --- */
@@ -100,6 +118,7 @@
 
 #btn-submit {
     margin-top: 100px;
+    color:#8b5a2b
 }
 
 #formulario input[type=text],
@@ -154,6 +173,17 @@ textarea.materialize-textarea:focus,
     border: 1px solid #a5a5a5 !important;
 }
 
+/* Esto fuerza a que el fondo del modal sea blanco siempre */
+.modal {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+}
+
+/* Esto le da un poco de sombra para que resalte */
+.modal.open {
+    display: block !important;
+}
+
 #btn-submit:not(:disabled) {
     background-color: #5d4037;
     color:#d4b295;
@@ -187,7 +217,27 @@ textarea.materialize-textarea:focus,
     padding: 8px;
 }
 
-/* --- Tabla de precios --- */
-.tabla-precios { border: 2px solid #5d4037 !important; border-collapse: collapse; width: 100%; }
-.tabla-precios th { background-color: #5d4037 !important; color: #d4b295 !important; padding: 15px !important; }
+.tabla-precios { border: 2px solid #5d4037 !important; border-collapse: collapse; width: 80%;margin: 40px auto; }
+.tabla-precios th { background-color: #5d4037 !important; color: white !important; padding: 15px !important; }
 .tabla-precios td { border-bottom: 1px solid #d7ccc8 !important; padding: 12px !important; }
+
+/* Agregamos un borde a la derecha a las columnas del footer */
+.page-footer .col {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Para que la última columna NO tenga línea*/
+  .page-footer .col:last-child {
+    border-right: none;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Para que el main se expanda para ocupar el espacio libre */
+main {
+    flex: 1;
+}
