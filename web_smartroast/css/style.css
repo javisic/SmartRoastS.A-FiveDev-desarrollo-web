@@ -100,7 +100,6 @@
 
 #btn-submit {
     margin-top: 100px;
-    color:#8b5a2b
 }
 
 #formulario input[type=text],
@@ -155,6 +154,12 @@ textarea.materialize-textarea:focus,
     border: 1px solid #a5a5a5 !important;
 }
 
+#btn-submit:not(:disabled) {
+    background-color: #5d4037;
+    color:#d4b295;
+    cursor: pointer;
+}
+
 /* --- Integración de blends  --- */
 .fila { display: flex; flex-wrap: wrap; align-items: stretch; }
 .columna { display: flex; }
@@ -184,5 +189,5 @@ textarea.materialize-textarea:focus,
 
 /* --- Tabla de precios --- */
 .tabla-precios { border: 2px solid #5d4037 !important; border-collapse: collapse; width: 100%; }
-.tabla-precios th { background-color: #5d4037 !important; color: white !important; padding: 15px !important; }
+.tabla-precios th { background-color: #5d4037 !important; color: #d4b295 !important; padding: 15px !important; }
 .tabla-precios td { border-bottom: 1px solid #d7ccc8 !important; padding: 12px !important; }
