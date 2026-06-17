@@ -43,6 +43,48 @@
 
 }
 
+<<<<<<< Updated upstream
+=======
+.hero-precios .hero-cuenta, h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hero-precios .hero-cuenta, p{
+    font-size: 16px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.btn-efecto {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.btn-efecto:hover {
+    filter: brightness(115%); 
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.margen-sup-inf {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.pie{
+    background-color: #261a16;
+}
+
+.pie, p{
+    color:#e0e0e0;
+    padding: 20px 0;
+}
+
+/* --- Formulario --- */
+>>>>>>> Stashed changes
 .input-field {
     margin-top: 30px;
     margin-bottom: 15px;
