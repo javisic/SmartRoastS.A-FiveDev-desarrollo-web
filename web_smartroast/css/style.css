@@ -14,6 +14,9 @@
     height: 40px;
 }
 
+.espacio{
+    margin-left: 30px;
+}
 .hero{
     min-height: 90vh;
     background-image: url("../img/imagen-hero.png");
@@ -22,6 +25,27 @@
     display: flex;
     align-items: center;
     padding: 50px 0;
+}
+
+.hero-precios{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/precios-mayoristas.png");
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+}
+
+.hero-cuenta{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/cuenta-comercial.png");
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+}
+
+.hero-precios .hero-cuenta{
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    /*padding: 40px 0;*/
 }
 
 .hero h1{
@@ -40,7 +64,12 @@
     font-weight: 600;
     letter-spacing: 2px;
     font-size: 12px;
+}
 
+.hero-precios .hero-cuenta, h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
 }
 
 .hero-precios .hero-cuenta, h1{
@@ -144,10 +173,6 @@ textarea.materialize-textarea:focus,
     border: 1px solid #a5a5a5 !important;
 }
 
-/* --- Integración de blends y Tabla de Precios  --- */
-.row { display: flex; flex-wrap: wrap; align-items: stretch; }
-.col { display: flex; }
-
 /* Esto fuerza a que el fondo del modal sea blanco siempre */
 .modal {
     background-color: #ffffff !important;
@@ -158,6 +183,30 @@ textarea.materialize-textarea:focus,
 .modal.open {
     display: block !important;
 }
+
+#btn-submit:not(:disabled) {
+    background-color: #5d4037;
+    color:#d4b295;
+    cursor: pointer;
+}
+
+/* --- Integración de blends  --- */
+.fila { display: flex; flex-wrap: wrap; align-items: stretch; }
+.columna { display: flex; }
+
+.modal-cafe-preview {
+    background-color: #2c1d11;
+    color: #ffffff;
+    height: 350px;
+    border-radius: 8px;
+    padding: 24px;
+    font-family: sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+}
+
+.modal-cafe-preview h4 { color: #d4b295; font-size: 1.8rem; margin-top: 0; margin-bottom: 12px; }
+.modal-cafe-preview p { color: #e0e0e0; line-height: 1.6; margin-bottom: 0; }
 
 .btn-cerrar-preview {
     background-color: transparent;
