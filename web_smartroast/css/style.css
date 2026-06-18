@@ -101,6 +101,10 @@
     align-items: center;
 }
 
+.card {
+    border-radius: 10px !important;
+}
+
 .pie{
     background-color: #261a16;
 }
@@ -217,7 +221,7 @@ textarea.materialize-textarea:focus,
     padding: 8px;
 }
 
-.tabla-precios { border: 2px solid #5d4037 !important; border-collapse: collapse; width: 80%;margin: 40px auto; }
+.tabla-precios { border: 2px solid #5d4037 !important; border-collapse: collapse; width: 80%;margin: 40px auto;}
 .tabla-precios th { background-color: #5d4037 !important; color: white !important; padding: 15px !important; }
 .tabla-precios td { border-bottom: 1px solid #d7ccc8 !important; padding: 12px !important; }
 
