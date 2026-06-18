@@ -181,6 +181,7 @@ textarea.materialize-textarea:focus,
 .modal {
     background-color: #ffffff !important;
     color: #333333 !important;
+    border-radius: 10px;
 }
 
 /* Esto le da un poco de sombra para que resalte */
