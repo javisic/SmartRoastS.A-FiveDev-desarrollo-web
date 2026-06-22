@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartRoast S.A.</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script>
+         $(document).ready(function() {
+            $('select').material_select();
+        });
+    </script>
+</head>
+
+<body>
+    <header class="brown darken-3">
+
+        <nav class="brown darken-3 z-depth-0">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo"><img src="img/logo-smartroast.png" alt="SmartRoast S.A." class="logo"></a>
+
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="precios.html">Precios</a></li>
+                        <li><a href="cuenta-comercial.html">Cuenta Comercial</a></li>
+                        <li class="telefono-nav">
+                            <i class="material-icons left espacio">phone</i>
+                            03571-15539179
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero-cuenta">
+            <div class="container">
+                <div class="row valign-wrapper">
+                    <div class="col s12 m8"> 
+                        <h1>
+                            Solicitud de cuenta comercial
+                        </h1>
+                        <p class="brown-text text-lighten-5">
+                            Completá el formulario y nuestro equipo se pondrá en contacto con vos.
+                        </p>
+
+                    </div>
+
+                    <div class="col s12 m4">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="formulario" class="section">
+            <div class="container margen-sup-inf">
+                <form id="form-cuenta-comercial" novalidate>
+                <div class="row">
+                    
+                    <div class="col s12 m6">
+                        
+                        <div class="input-field col s12">
+                            <label class="active" for="pais">País *</label>
+                            <select id="pais" required>
+                                <option value="" disabled selected>Selecciona el país donde opera tu empresa</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Uruguay">Uruguay</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <label class="active" for="nombre_empresa">Nombre de empresa *</label>
+                            <input id="nombre_empresa" type="text" placeholder="Ej. El Grano Dorado S.A." required>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <label class="active" for="correo">Correo electrónico *</label>
+                            <input id="correo" type="email" placeholder="ejemplo@empresa.com" class="validate" required>
+                            <span class="helper-text" data-error="Introduzca un correo electrónico válido."></span>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <label class="active" for="volumen">Volumen mensual estimado (kg) *</label>
+                            <input id="volumen" type="number" min="1" max="15000" step="1" placeholder="Ej. 3000" class="validate" required>
+                            <span class="helper-text" data-error="El valor debe ser un entero entre 1 y 15000."></span>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6">
+                        
+                        <div class="input-field col s12">
+                            <label class="active" for="tipo_negocio">Tipo de negocio *</label>
+                            <select id="tipo_negocio" required>
+                            <option value="" disabled selected>Selecciona el tipo de negocio</option>
+                            <option value="Cafeteria">Cafetería / Tostaduría</option>
+                            <option value="Horeca">Hotel / Restaurante / Catering</option>
+                            <option value="Distribuidor">Distribuidor / Mayorista</option>
+                            <option value="Oficina">Oficina / Corporativo</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <label class="active" for="info_adicional">Información adicional</label>
+                            <textarea id="info_adicional" class="materialize-textarea" placeholder="Escribe aquí detalles adicionales, preguntas o requerimientos especiales..."></textarea>
+                        </div>
+
+
+                        <div class="col s12 center-align">
+                            <button id="btn-submit" class="btn-large waves-effect waves-light btn-efecto" type="submit" disabled>
+                                <i class="material-icons left">send</i>ENVIAR SOLICITUD
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2026 SmartRoast S.A. Todos los derechos reservados.
+                <span class="right">
+                    <a class="white-text" href="https://www.instagram.com" target="_blank">Instagram</a> |
+                    <a class="white-text" href="https://www.facebook.com" target="_blank">Facebook</a> |
+                    <a class="white-text" href="mailto:info@smartroast.com">Email</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script>
+        $(document).ready(function() {
+            const $form = $('#form-cuenta-comercial');
+            const $btnSubmit = $('#btn-submit');
+            
+            const $pais = $('#pais');
+            const $tipoNegocio = $('#tipo_negocio');
+            const $nombreEmpresa = $('#nombre_empresa');
+            const $correo = $('#correo');
+            const $volumen = $('#volumen');
+
+            function validarFormulario() {
+                // Condición 1: Que los campos tipo select tengan un input válido (no vacío ni null)
+                const paisOk = $pais.val() !== null && $pais.val() !== '';
+                const negocioOk = $tipoNegocio.val() !== null && $tipoNegocio.val() !== '';
+                
+                // Condición 2: Que el nombre de empresa no esté vacío ni sean solo espacios
+                const nombreOk = $nombreEmpresa.val().trim() !== '';
+                
+                // Condición 3: Que los campos de email y kg tengan inputs válidos según lo antes establecido,
+                // para lo cual se usa la validación nativa del navegador '.checkValidity()'
+                const correoOk = $correo[0].checkValidity();
+                const volumenOk = $volumen[0].checkValidity();
+
+                // Si las 5 condiciones se cumplen, se habilita el botón. Si no, sigue deshabilitado.
+                if (paisOk && negocioOk && nombreOk && correoOk && volumenOk) {
+                    $btnSubmit.prop('disabled', false);
+                } else {
+                    $btnSubmit.prop('disabled', true);
+                }
+            }
+
+            // El evento 'input' detecta cada letra que el usuario escribe o borra al instante
+            $nombreEmpresa.on('input', validarFormulario);
+            $correo.on('input blur', validarFormulario); // blur evalúa recién cuando salen del campo
+            $volumen.on('input change', validarFormulario); // change atrapa los clicks en las flechitas de abajo-arriba
+
+            // Para los selectores de Materialize, el plugin dispara un evento 'change' en el select oculto
+            $pais.on('change', validarFormulario);
+            $tipoNegocio.on('change', validarFormulario);
+
+            // Se ejecuta la función una vez al principio por si el navegador autocompletó algo
+            validarFormulario();
+        });
+    </script>
+</body>
+</html>
